@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="http://code.jquery.com/ui/1.10.4/themes/redmond/jquery-ui.min.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+          integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        
+    <font face="MS P明朝"></font>
+    <title>自己紹介</title>
+        
+  </head>
+  <body>
+    <h2>マイページ</h2>
+    <div id="tabs">
+      <ul>
+        <li><a href = "#profile">profile</a></li>
+        <li><a href = "#hobby">Hobby</a></li>
+        <li><a href = "#favorite">Favorite</a></li>
+        <li><a href = "#work">work</a></li>
+      </ul>
+      <div id = "accordion">
+        <div id = "profile">
+          <ul class="text">
+            <li>金谷一輝(かなやいつき)</li>
+            <li>出身：北海道札幌市</li>
+            <li>生年月日：2003/9/4(20歳)</li>
+            <li>血液型：AB型</li>
+          </ul>
+          <img src="photo/me.jpg" width="250px">
+          <table>
+            <tr>
+                <th>入学</th><th>卒業</th><th>学校名</th>
+            </tr>
+            <tr>
+                <td>2016/4/1</td><td>2019/3/11</td><td>札幌の中学校</td>
+            </tr>
+            <tr>
+                <td>2019/4/1</td><td>2022/3/5</td><td>札幌の高校</td>
+            </tr>
+            <tr>
+                <td>2022/4/1</td><td class="diagonal"></td><td>明治大学総合数理学部</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+              
+      <div id = "accordion">
+        <div id = "hobby">
+            <ul>
+              <li>野球観戦：
+              <a href="https://www.seibulions.jp/" target="_blank">埼玉西武ライオンズ</a>を応援してます！</li>
+              <li>スイーツ巡り：抹茶や黒ゴマに目が無いです...</li>
+            </ul>
+        </div>
+      </div>
+            
+      <div id = "accordion">
+        <div id = "favorite">
+            <ul>
+              <li>北海道の美味しいごはん</li>
+              <li>和スイーツ</li>
+            </ul>
+            <img src="photo/IMG_9043.jpg" width="250px">
+            <img src="photo/IMG_9025.jpg" width="250px">
+            <img src="photo/IMG_8607.jpg" width="250px">
+            <img src="photo/IMG_8523.jpg" width="400px">
+        </div>
+      </div>
+            
+      <div id = "work">
+        <div id = "ac">
+          <h3>JavaScriptによる地図表示</h3>
+          <div id = "accordion">
+           <a href="work1.html">・パリーグ本拠地を巡ろう</a><br>
+          </div>
+          <h3>分岐とスライダーによる</h3>
+          <div id = "accordion">
+           <a href="work2.html">・16タイプ性格診断</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+      <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+      <script>
+      $(function() {
+        $('#tabs').tabs({
+              active: 0
+        });
+      });
+      </script>
+      <script>
+      $(function() {
+          $('#ac').accordion({
+              active: 0
+          });
+      });
+    </script>
+           
+  </body>
+</html>
